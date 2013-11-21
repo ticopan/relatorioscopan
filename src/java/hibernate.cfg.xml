@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://192.9.100.2:1433</property>
+    <property name="hibernate.connection.username">consulta</property>
+    <property name="hibernate.connection.password">consulta</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="Beans.Convenio"/>
+    <mapping class="Beans.Plano"/>
+    <mapping class="Beans.Tabela"/>
+    <mapping class="Beans.Boletim"/>
+    <mapping class="Beans.Agencia"/>
+    <mapping class="Beans.AgenciaPK"/>
+    <mapping class="Beans.Banco"/>
+    <mapping class="Beans.Cobranca"/>
+    <mapping class="Beans.Cooperado"/>
+    <mapping class="Beans.Hospital"/>
+    <mapping class="Beans.Local"/>
+    <mapping class="Beans.LocalServico"/>
+    <mapping class="Beans.LocalServicoPK"/>
+    <mapping class="Beans.Lote"/>
+    <mapping class="Beans.Pagamento"/>
+    <mapping class="Beans.Plano"/>
+    <mapping class="Beans.PlanoPK"/>
+    <mapping class="Beans.Protocolo"/>
+    <mapping class="Beans.Regiao"/>
+    <mapping class="Beans.Servico"/>
+    <mapping class="Beans.Tabela"/>
+  </session-factory>
+</hibernate-configuration>
